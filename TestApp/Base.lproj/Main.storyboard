@@ -60,13 +60,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TestApp" id="VLb-Ob-RBk">
-                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="fj8-cG-gU5">
-                            <connections>
-                                <action selector="LoginOutButtonTapped:" destination="9pv-A4-QxB" id="BNe-9q-oZg"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="TestApp" id="VLb-Ob-RBk"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="directionsLabel" destination="fZR-Q9-vhn" id="x6Q-el-riw"/>
@@ -145,13 +139,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TestApp" id="mr1-HF-sqb">
-                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="JHw-iL-VoR">
-                            <connections>
-                                <action selector="LogOutButtonTipped:" destination="8rJ-Kc-sve" id="LOI-zI-Ws6"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="TestApp" id="mr1-HF-sqb"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="searchBar" destination="GVU-Mj-2eT" id="niN-S7-sb3"/>
@@ -217,21 +205,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmZ-HO-ySl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-87" y="-351"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="7r0-u6-Cq8">
-            <objects>
-                <viewController storyboardIdentifier="loginViewController" id="HQE-PL-Gan" customClass="LoginViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1jU-IC-UJp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="fkb-rU-jHz"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7i4-iF-w4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1799" y="-350"/>
         </scene>
     </scenes>
     <resources>

@@ -14,8 +14,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var forecastData = [Weather]()
     
-    @IBAction func LogOutButtonTipped(_ sender: UIBarButtonItem) {
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         updateWeatherForLocation(location: "Ivano-Frankivsk")

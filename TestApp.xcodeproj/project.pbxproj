@@ -14,7 +14,6 @@
 		C714D09B1FD7F1BE00A15970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C714D09A1FD7F1BE00A15970 /* Assets.xcassets */; };
 		C714D09E1FD7F1BE00A15970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C714D09C1FD7F1BE00A15970 /* LaunchScreen.storyboard */; };
 		C714D0A61FD7F64200A15970 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714D0A51FD7F64200A15970 /* Weather.swift */; };
-		C7B5E17C1FD9C7900016128A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B5E17B1FD9C7900016128A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		C714D09D1FD7F1BE00A15970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C714D09F1FD7F1BE00A15970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C714D0A51FD7F64200A15970 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		C7B5E17B1FD9C7900016128A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 			children = (
 				C714D0931FD7F1BE00A15970 /* FirstViewController.swift */,
 				C714D0951FD7F1BE00A15970 /* SecondViewController.swift */,
-				C7B5E17B1FD9C7900016128A /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 				C714D0A61FD7F64200A15970 /* Weather.swift in Sources */,
 				C714D0961FD7F1BE00A15970 /* SecondViewController.swift in Sources */,
 				C714D0921FD7F1BE00A15970 /* AppDelegate.swift in Sources */,
-				C7B5E17C1FD9C7900016128A /* LoginViewController.swift in Sources */,
 				C714D0941FD7F1BE00A15970 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

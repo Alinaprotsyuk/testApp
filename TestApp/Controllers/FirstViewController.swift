@@ -17,10 +17,6 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
     
-    @IBAction func LoginOutButtonTapped(_ sender: UIBarButtonItem) {
-//        guard let loginViewController = UIStoryboard(name: )
-    }
-    
     let locationManager = CLLocationManager()
     var currentCoordinate: CLLocationCoordinate2D!
     
