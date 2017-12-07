@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class SecondViewController: UIViewController {
+class SecondViewController: ParentViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var forecastData = [Weather]()
@@ -20,11 +20,15 @@ class SecondViewController: UIViewController {
     }
     
     func updateWeatherForLocation (location: String) {
+        startActivity()
         CLGeocoder().geocodeAddressString(location) { (placemarks:[CLPlacemark]?, error:Error?) in
             if error == nil {
                 if let location = placemarks?.first?.location {
-                    Weather.forecast(withLocation: location.coordinate, completion: { (results:[Weather]?) in
-                        
+                    Weather.forecast(withLocation: location.coordinate, completion: { (results:[Weather]?, errorMessage) in
+                        self.stopActivity()
+                        if !errorMessage.isEmpty {
+                            self.showAllert(title: "Warning", message: errorMessage, completionHandler: nil) 
+                        }
                         if let weatherData = results {
                             self.forecastData = weatherData
                             DispatchQueue.main.async {

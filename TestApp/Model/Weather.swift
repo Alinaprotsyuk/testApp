@@ -34,14 +34,31 @@ struct Weather {
     
     static let basePath = "https://api.darksky.net/forecast/d81c691216c41c1a5f8ef24e2195e800/"
     
-    static func forecast (withLocation location: CLLocationCoordinate2D, completion: @escaping ([Weather]?) -> ()) {
+    static func forecast (withLocation location: CLLocationCoordinate2D, completion: @escaping ([Weather]?, String) -> ()) {
         
         let url = basePath + "\(location.latitude),\(location.longitude)"
         let request = URLRequest(url: URL(string: url)!)
-        print(request)
         let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             
             var forecastArray: [Weather] = []
+            var errorMessage: String = ""
+            
+            if let sessionError = error {
+                print(sessionError.localizedDescription)
+            }
+            
+            if let sessionResponse = response as? HTTPURLResponse {
+                switch sessionResponse.statusCode {
+                    case HTTPStatusCodes.BadRequest.rawValue:
+                        errorMessage = "Invalid query"
+                    case HTTPStatusCodes.Unauthorized.rawValue:
+                        errorMessage = "Not authorized"
+                    case HTTPStatusCodes.NotFound.rawValue:
+                        errorMessage = "Not fount"
+                    default:
+                        errorMessage = "Try again"
+                }
+            }
             
             if let data = data {
                 
@@ -61,7 +78,7 @@ struct Weather {
                 } catch {
                     print(error.localizedDescription)
                 }
-                completion(forecastArray)
+                completion(forecastArray, errorMessage)
             }
         }
         task.resume()
