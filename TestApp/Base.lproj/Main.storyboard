@@ -150,6 +150,22 @@
             </objects>
             <point key="canvasLocation" x="458" y="457"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="2Lt-0M-o4X">
+            <objects>
+                <viewController id="Fcs-u6-fpF" customClass="ThirdViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlJ-2q-eLj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6GU-d3-CIi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="third" id="Ske-iH-daJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlF-b3-qFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="457"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -162,6 +178,7 @@
                     <connections>
                         <segue destination="fbG-ad-laD" kind="relationship" relationship="viewControllers" id="mrd-1A-YIW"/>
                         <segue destination="MNM-eH-Qbg" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Fcs-u6-fpF" kind="relationship" relationship="viewControllers" id="QuS-gS-SmW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -210,5 +227,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="third" width="50" height="50"/>
     </resources>
 </document>

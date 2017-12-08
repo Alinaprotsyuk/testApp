@@ -56,7 +56,7 @@ struct Weather {
                     case HTTPStatusCodes.NotFound.rawValue:
                         errorMessage = "Not fount"
                     default:
-                        errorMessage = "Try again"
+                        errorMessage = ""
                 }
             }
             
